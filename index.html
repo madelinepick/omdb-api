@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en" ng-app='omdbApp'>
+<head>
+  <meta charset="UTF-8">
+
+  <!-- Styling -->
+  <link href='https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" href="style/style.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css">
+
+  <!-- CDNS -->
+  <script src='https://ajax.googleapis.com/ajax/libs/angularjs/1.5.5/angular.min.js'></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.5/angular-animate.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.0/angular-messages.js"></script>
+  <script src='http://ajax.googleapis.com/ajax/libs/angularjs/1.5.5/angular-route.js'></script>
+
+  <!-- module -->
+  <script src='module.js'></script>
+
+  <!-- controller -->
+  <script src='controller.js'></script>
+
+  <!-- directives -->
+  <script src='directives/search/search.js'></script>
+  <script src='directives/movies/movies.js'></script>
+
+  <title>OMDb Search</title>
+</head>
+<body ng-controller='OmdbController'>
+  <h1>OMDB API Search Service</h1>
+  <search moviesearch="data.movieSearch" movies='data.movies' show='data.show'></search>
+  <movies movies='data.movies' show='data.show'></movies>
+</body>
+</html>

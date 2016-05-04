@@ -1,0 +1,9 @@
+.row {
+  display: flex;
+}
+.left {
+  flex: 0 0 30%;
+}
+.right {
+  flex: 0 0 70%;
+}

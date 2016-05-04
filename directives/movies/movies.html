@@ -1,0 +1,16 @@
+<div>
+  <div ng-repeat='movie in movies' ng-show='show'>
+    <h1 ng-click='singlePage(movie.imdbID)'>{{movie.Title}}</h1>
+  </div>
+
+  <div ng-show='!show' class='row'>
+    <div class='left'>
+      <img ng-src="{{ singleMovie.correctSrc }}">
+    </div>
+    <div class=right>
+      <h1>{{ singleMovie.Title }}</h1>
+      <p>{{ singleMovie.Year}}</p>
+      <p>{{ singleMovie.Plot}}</p>
+    </div>
+  </div>
+</div>
